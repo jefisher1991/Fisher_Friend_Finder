@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Survey</title>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
 <h1>This is a survey </h1>
 <form action="http://localhost:3000/api/friends" method="POST">
 	
-
-	
-<!-- start bootstrap -->
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+<h2> Please choose your agreement with the statements by clicking on the button. </h2>
+<p> 1= Do not agree </p> <p> 2= Neutral </p> <p> 3= agree </p>
+	<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle Q1" type="button" data-toggle="dropdown">I am Nice
+</button>
+    <ul class="dropdown-menu">
+      <li><a href="#" value= 1>1</a></li>
+      <li><a href="#" value =2>2</a></li>
+      <li><a href="#" value =3>3</a></li>
+    </ul>
   </div>
 </div>
 
-<input type="submit" name="" value= "submit">
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">I am Clean
+</button>
+    <ul class="dropdown-menu">
+      <li><a href="#" value= 1>1</a></li>
+      <li><a href="#" value =2>2</a></li>
+      <li><a href="#" value =3>3</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">I am Active
+</button>
+    <ul class="dropdown-menu">
+      <li><a href="#" value= 1>1</a></li>
+      <li><a href="#" value =2>2</a></li>
+      <li><a href="#" value =3>3</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">I am Awesome
+</button>
+    <ul class="dropdown-menu">
+      <li><a href="#" value= 1>1</a></li>
+      <li><a href="#" value =2>2</a></li>
+      <li><a href="#" value =3>3</a></li>
+    </ul>
+  </div>
+</div>
+
+<input type="submit" id="submit" name="" value= "submit">
 
 
-
-
-<!-- end bootstrap -->
 
 	<a href="home.html">Back</a>
+
+
 </form>
+
+<script src="../data/friends.js"></script>
 </body>
 </html>

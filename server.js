@@ -14,7 +14,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 var buddies = [
 	{
-  "name":"JOhn",
+  "name":"John",
   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
   "scores":[1,2,3,4,5,6,7,8,9,1]
 	},
@@ -84,9 +84,11 @@ app.get("/api/friends", function (req, res){
 })
 
 app.post("/api/friends", function (req, res){
-	// alog. to check response data with 
-	res.send("you reached the post office for friends")
+	// alog. to check response data with buddies data
+	res.send("Your best friend is:")
 })
+
+
 
 
 
